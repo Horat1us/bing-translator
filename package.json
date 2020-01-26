@@ -1,0 +1,40 @@
+{
+  "name": "@horat1us/bing-translator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/bing-translator.js",
+  "types": "./dist/bing-translator.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "start": "./dist/bing-translate-cli.js",
+    "build": "rm -rf ./dist && tsc && chmod -R +x ./dist/*-cli.js",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Horat1us/bing-translator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Horat1us/bing-translator/issues"
+  },
+  "homepage": "https://github.com/Horat1us/bing-translator#readme",
+  "dependencies": {
+    "puppeteer": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.5.0",
+    "@types/puppeteer": "^2.0.0",
+    "mocha": "^7.0.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "bin": {
+    "bing-translate": "./dist/bing-translate-cli.js"
+  }
+}

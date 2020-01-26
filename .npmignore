@@ -1,0 +1,6 @@
+# .npmignore - the files to not push to NPM
+src/
+tsconfig.json
+tsconfig.test.json
+.mocharc.*
+runtime/
