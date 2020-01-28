@@ -19,7 +19,7 @@ npm i -g @horat1us/bing-translator
 
 cat ~/document.txt | bing-translate
 ## or interactive
-bing-translate
+bing-translate --source=ru --target=uk
 ```
 
 ## From sources
